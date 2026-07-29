@@ -16,3 +16,45 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2026-07-28 14:20:27.767
 !MESSAGE Indexed 'First_STM32_Poject' (21 sources, 83 headers) in 2.48 sec: 5,566 declarations; 28,687 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0058%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-28 14:58:52.390
+!MESSAGE Indexed 'Secind_STM32_Project' (30 sources, 95 headers) in 2.89 sec: 9,309 declarations; 71,786 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0025%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-28 15:29:27.154
+!MESSAGE Indexed 'STM32_UART' (30 sources, 95 headers) in 3.11 sec: 9,309 declarations; 71,786 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0025%)
+
+!ENTRY org.eclipse.remote.core 4 0 2026-07-28 15:56:56.085
+!MESSAGE RKS
+
+!ENTRY org.eclipse.remote.core 4 0 2026-07-28 15:56:57.094
+!MESSAGE RKS
+
+!ENTRY org.eclipse.remote.core 4 0 2026-07-28 15:56:59.949
+!MESSAGE RKS
+
+!ENTRY org.eclipse.remote.core 4 0 2026-07-28 15:57:02.309
+!MESSAGE RKS
+
+!ENTRY org.eclipse.remote.core 4 0 2026-07-28 15:57:02.526
+!MESSAGE RKS
+
+!ENTRY org.eclipse.remote.core 4 0 2026-07-28 15:57:02.709
+!MESSAGE RKS
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-28 16:03:32.179
+!MESSAGE Indexed 'SensorInterfacing' (30 sources, 95 headers) in 3.17 sec: 9,309 declarations; 71,786 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0025%)
+!SESSION 2026-07-29 09:26:42.926 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-07-29 09:27:03.858
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-07-29 09:27:03.858
+!MESSAGE Log4j2 initialized with config file D:\RKS_TinyML_Workspace\TinyML_Workshop_Nitte\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-07-29 09:27:13.479
+!MESSAGE Started RMI Server, listening on port 41337

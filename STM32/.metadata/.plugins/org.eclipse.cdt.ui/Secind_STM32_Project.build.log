@@ -1,0 +1,10 @@
+15:09:25 **** Incremental Build of configuration Debug for project Secind_STM32_Project ****
+make -j16 all 
+arm-none-eabi-size  Secind_STM32_Project.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6832	     12	   1572	   8416	   20e0	Secind_STM32_Project.elf
+Finished building: default.size.stdout
+ 
+
+15:09:25 Build Finished. 0 errors, 0 warnings. (took 143ms)
+
