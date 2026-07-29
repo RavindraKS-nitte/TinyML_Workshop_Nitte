@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Interfacing_MPU6050/Core/Inc/MPU6050.h&apos; to &apos;mpu6050.h&apos;" description="Rename resource &apos;MPU6050.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/MPU6050.h" name="mpu6050.h" stamp="1785307227616" updateReferences="true"/>
+</session>
