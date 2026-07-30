@@ -26,6 +26,7 @@
 #include "network.h"
 #include "network_data.h"
 #include "network_data_params.h"
+#include "imu.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,15 +59,26 @@ static ai_buffer *ai_input;
 static ai_buffer *ai_output;
 
 /* Input Features */
-float input_data[6] =
-{
-		0.240f,
-		0.548f,
-		0.586f,
-		0.411f,
-		0.368f,
-		0.482f
+float input_data[6];
 
+const float feature_min[6] =
+{
+    -2.000f,
+    -2.000f,
+    -2.000f,
+    -250.137f,
+    -250.137f,
+    -250.137f
+};
+
+const float feature_max[6] =
+{
+     2.000f,
+     1.749f,
+     2.000f,
+     250.130f,
+     250.130f,
+     250.130f
 };
 
 /* Predicted Label */
@@ -82,7 +94,8 @@ static void MX_GPIO_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
-
+void Normalize_Features(void);
+void AI_Run(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -116,6 +129,7 @@ void MX_X_CUBE_AI_Init(void)
 
     printf("AI Initialized Successfully\r\n");
 }
+
 /* USER CODE END 0 */
 
 /**
@@ -151,9 +165,11 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   printf("\r\n");
-    printf("Random Forest STM32 Demo\r\n");
-
-    MX_X_CUBE_AI_Init();
+   printf("Random Forest STM32 Demo\r\n");
+   float ax, ay, az;
+     float gx, gy, gz;
+  //   float data[6] = {0};
+   MX_X_CUBE_AI_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -163,10 +179,36 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  AI_Run();
+	  IMU_Read_Accel(&ax, &ay, &az);
+	  	  IMU_Read_Gyro(&gx, &gy, &gz);
 
-	 	  HAL_Delay(3000);
-  }
+	  	  /* Build feature vector */
+	  	  input_data[0] = ax;
+	  	  input_data[1] = ay;
+	  	  input_data[2] = az;
+	  	  input_data[3] = gx;
+	  	  input_data[4] = gy;
+	  	  input_data[5] = gz;
+
+	  	  /* Normalize */
+	  	  Normalize_Features();
+
+	  	  printf("\nRaw Sensor Values\n");
+	  	  printf("\nAx = %.3f  Ay = %.3f  Az = %.3f\n", ax, ay, az);
+	  	  printf("\nGx = %.3f  Gy = %.3f  Gz = %.3f\n", gx, gy, gz);
+
+	  	  printf("\nNormalized Features\n");
+	  	  for(int i = 0; i < 6; i++)
+	  	  {
+	  	      printf("%.3f ", input_data[i]);
+	  	  }
+	  	  printf("\n");
+
+	  	  /* Run inference */
+	  	  AI_Run();
+
+	  	  HAL_Delay(200);
+	    }
   /* USER CODE END 3 */
 }
 
@@ -340,6 +382,23 @@ int _write(int file, char *ptr, int len)
 {
     HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
     return len;
+}
+
+void Normalize_Features(void)
+{
+    for(int i = 0; i < 6; i++)
+    {
+        input_data[i] =
+            (input_data[i] - feature_min[i]) /
+            (feature_max[i] - feature_min[i]);
+
+        /* Optional safety clipping */
+        if(input_data[i] < 0.0f)
+            input_data[i] = 0.0f;
+
+        if(input_data[i] > 1.0f)
+            input_data[i] = 1.0f;
+    }
 }
 
 void AI_Run(void)
