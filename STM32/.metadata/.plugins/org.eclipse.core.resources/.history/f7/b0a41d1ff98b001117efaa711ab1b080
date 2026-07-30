@@ -61,11 +61,11 @@ static ai_buffer *ai_output;
 float input_data[6] =
 {
 		0.240f,
-		0.548f,
-		0.586f,
-		0.411f,
+		0.023f,
+		0.086f,
+		0.001f,
 		0.368f,
-		0.482f
+		0.582f
 
 };
 
