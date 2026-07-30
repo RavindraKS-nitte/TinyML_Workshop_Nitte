@@ -1,3 +1,4 @@
 1785299442579	Delete resource 'Interfacing_BH1750/Core/Inc/bh1750'
 1785306346266	Rename resource 'Interfacing_MD6050'
 1785314369777	Delete resource 'MPU6050_Data_Acquisition/Core/Src/main.c'
+1785384600286	Delete resource 'Interfacing_onboard_accel/Core/Src/main.c'

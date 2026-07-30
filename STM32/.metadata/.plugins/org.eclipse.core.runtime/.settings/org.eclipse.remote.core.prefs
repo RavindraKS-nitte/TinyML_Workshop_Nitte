@@ -1,3 +1,8 @@
+connections/org.eclipse.remote.serial.core.connectionType/OnboardIMU/serial.baudRate=11
+connections/org.eclipse.remote.serial.core.connectionType/OnboardIMU/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/OnboardIMU/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/OnboardIMU/serial.portName=COM6
+connections/org.eclipse.remote.serial.core.connectionType/OnboardIMU/serial.stopBits=0
 connections/org.eclipse.remote.serial.core.connectionType/RKS/serial.baudRate=11
 connections/org.eclipse.remote.serial.core.connectionType/RKS/serial.byteSize=3
 connections/org.eclipse.remote.serial.core.connectionType/RKS/serial.parity=0
