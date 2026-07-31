@@ -61,7 +61,7 @@ main-build: NANOEdge_AI.elf secondary-outputs
 
 # Tool invocations
 NANOEdge_AI.elf NANOEdge_AI.map: $(OBJS) $(USER_OBJS) D:\RKS_TinyML_Workspace\TinyML_Workshop_Nitte\STM32\NANOEdge_AI\STM32L4S5VITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "NANOEdge_AI.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\RKS_TinyML_Workspace\TinyML_Workshop_Nitte\STM32\NANOEdge_AI\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NANOEdge_AI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "NANOEdge_AI.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\RKS_TinyML_Workspace\TinyML_Workshop_Nitte\STM32\NANOEdge_AI\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NANOEdge_AI.map" -Wl,--gc-sections -static -L"D:\RKS_TinyML_Workspace\TinyML_Workshop_Nitte\STM32\NANOEdge_AI\NEAI\Lib" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

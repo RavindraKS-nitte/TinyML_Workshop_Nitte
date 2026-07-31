@@ -30,7 +30,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
- ../Core/Inc/imu.h ../Core/Inc/main.h ../Core/Inc/lsm6dsl_reg.h
+ ../Core/Inc/imu.h ../Core/Inc/main.h ../Core/Inc/lsm6dsl_reg.h \
+ D:/RKS_TinyML_Workspace/TinyML_Workshop_Nitte/STM32/NANOEdge_AI/NEAI/Inc/NanoEdgeAI.h
 ../Core/Inc/main.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
@@ -66,3 +67,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/imu.h:
 ../Core/Inc/main.h:
 ../Core/Inc/lsm6dsl_reg.h:
+D:/RKS_TinyML_Workspace/TinyML_Workshop_Nitte/STM32/NANOEdge_AI/NEAI/Inc/NanoEdgeAI.h:
