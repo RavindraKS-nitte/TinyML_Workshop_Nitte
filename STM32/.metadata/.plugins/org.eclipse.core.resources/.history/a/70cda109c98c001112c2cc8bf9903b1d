@@ -52,7 +52,7 @@ UART_HandleTypeDef huart1;
 /* USER CODE BEGIN PV */
 float Imu_buffer[AXIS_NUMBER * DATA_INPUT_USER]={0};
 float probabilities[NEAI_NUMBER_OF_CLASSES];
-const char *id2class[NEAI_NUMBER_OF_CLASSES]={"Pitch","Idle","Yaw","Shake","Roll"};
+const char *id2class[NEAI_NUMBER_OF_CLASSES]={"Pitch","Idle","Roll","Yaw", "Shake"};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
