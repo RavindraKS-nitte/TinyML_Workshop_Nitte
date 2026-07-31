@@ -1,8 +1,10 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Secind_STM32_Project,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32_UART,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Interfacing_BH1750,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Interfacing_onboard_accel,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Inference_OnBoard_IMU,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RealTime_IMU
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Secind_STM32_Project,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32_UART,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Interfacing_BH1750,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Interfacing_onboard_accel,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Inference_OnBoard_IMU,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RealTime_IMU,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DL_Inference
 eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Inference_OnBoard_IMU/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Inference_OnBoard_IMU/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Interfacing_BH1750/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Interfacing_BH1750/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32_UART/activeLaunchMode=run

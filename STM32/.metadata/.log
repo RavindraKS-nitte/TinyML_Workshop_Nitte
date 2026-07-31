@@ -1822,3 +1822,21 @@ java.io.IOException: Error opening \\.\COM6 (5)
 
 !ENTRY org.eclipse.cdt.core 1 0 2026-07-30 15:38:43.682
 !MESSAGE Indexed 'RealTime_IMU' (30 sources, 95 headers) in 2.96 sec: 9,309 declarations; 71,786 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0025%)
+!SESSION 2026-07-31 09:34:47.182 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-07-31 09:34:56.158
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-07-31 09:34:56.158
+!MESSAGE Log4j2 initialized with config file D:\RKS_TinyML_Workspace\TinyML_Workshop_Nitte\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-07-31 09:35:06.326
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-31 10:04:42.981
+!MESSAGE Indexed 'DL_Inference' (30 sources, 95 headers) in 3.33 sec: 9,309 declarations; 71,786 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0025%)

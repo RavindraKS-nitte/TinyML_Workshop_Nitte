@@ -1,34 +1,17 @@
-15:51:58 **** Incremental Build of configuration Debug for project RealTime_IMU ****
+11:28:47 **** Incremental Build of configuration Debug for project DL_Inference ****
 make -j16 all 
 arm-none-eabi-gcc "../X-CUBE-AI/App/network.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/AI/Inc -I../X-CUBE-AI/App -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"X-CUBE-AI/App/network.d" -MT"X-CUBE-AI/App/network.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "X-CUBE-AI/App/network.o"
 arm-none-eabi-gcc "../X-CUBE-AI/App/network_data.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/AI/Inc -I../X-CUBE-AI/App -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"X-CUBE-AI/App/network_data.d" -MT"X-CUBE-AI/App/network_data.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "X-CUBE-AI/App/network_data.o"
 arm-none-eabi-gcc "../X-CUBE-AI/App/network_data_params.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/AI/Inc -I../X-CUBE-AI/App -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"X-CUBE-AI/App/network_data_params.d" -MT"X-CUBE-AI/App/network_data_params.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "X-CUBE-AI/App/network_data_params.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/AI/Inc -I../X-CUBE-AI/App -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "RealTime_IMU.elf" @"objects.list"  -l:NetworkRuntime1020_CM4_GCC.a -mcpu=cortex-m4 -T"D:\RKS_TinyML_Workspace\TinyML_Workshop_Nitte\STM32\RealTime_IMU\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RealTime_IMU.map" -Wl,--gc-sections -static -L../Middlewares/ST/AI/Lib --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: RealTime_IMU.elf
+arm-none-eabi-gcc -o "DL_Inference.elf" @"objects.list"  -l:NetworkRuntime1020_CM4_GCC.a -mcpu=cortex-m4 -T"D:\RKS_TinyML_Workspace\TinyML_Workshop_Nitte\STM32\DL_Inference\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DL_Inference.map" -Wl,--gc-sections -static -L../Middlewares/ST/AI/Lib --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DL_Inference.elf
  
-arm-none-eabi-size  RealTime_IMU.elf 
-arm-none-eabi-objdump -h -S RealTime_IMU.elf  > "RealTime_IMU.list"
+arm-none-eabi-size  DL_Inference.elf 
+arm-none-eabi-objdump -h -S DL_Inference.elf  > "DL_Inference.list"
    text	   data	    bss	    dec	    hex	filename
-1278404	   2324	   5036	1285764	 139e84	RealTime_IMU.elf
+  59516	   2140	   5412	  67068	  105fc	DL_Inference.elf
 Finished building: default.size.stdout
  
-Finished building: RealTime_IMU.list
- 
-15:52:31 **** Incremental Build of configuration Debug for project RealTime_IMU ****
-make -j16 all 
-arm-none-eabi-gcc "../X-CUBE-AI/App/network.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/AI/Inc -I../X-CUBE-AI/App -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"X-CUBE-AI/App/network.d" -MT"X-CUBE-AI/App/network.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "X-CUBE-AI/App/network.o"
-arm-none-eabi-gcc "../X-CUBE-AI/App/network_data.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/AI/Inc -I../X-CUBE-AI/App -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"X-CUBE-AI/App/network_data.d" -MT"X-CUBE-AI/App/network_data.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "X-CUBE-AI/App/network_data.o"
-arm-none-eabi-gcc "../X-CUBE-AI/App/network_data_params.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/AI/Inc -I../X-CUBE-AI/App -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"X-CUBE-AI/App/network_data_params.d" -MT"X-CUBE-AI/App/network_data_params.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "X-CUBE-AI/App/network_data_params.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/AI/Inc -I../X-CUBE-AI/App -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "RealTime_IMU.elf" @"objects.list"  -l:NetworkRuntime1020_CM4_GCC.a -mcpu=cortex-m4 -T"D:\RKS_TinyML_Workspace\TinyML_Workshop_Nitte\STM32\RealTime_IMU\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RealTime_IMU.map" -Wl,--gc-sections -static -L../Middlewares/ST/AI/Lib --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: RealTime_IMU.elf
- 
-arm-none-eabi-size  RealTime_IMU.elf 
-arm-none-eabi-objdump -h -S RealTime_IMU.elf  > "RealTime_IMU.list"
-   text	   data	    bss	    dec	    hex	filename
-1278404	   2324	   5036	1285764	 139e84	RealTime_IMU.elf
-Finished building: default.size.stdout
- 
-Finished building: RealTime_IMU.list
+Finished building: DL_Inference.list
  
