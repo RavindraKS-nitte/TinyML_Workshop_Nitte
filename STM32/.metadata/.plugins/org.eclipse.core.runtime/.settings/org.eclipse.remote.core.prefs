@@ -13,6 +13,11 @@ connections/org.eclipse.remote.serial.core.connectionType/Inference_Onboard/seri
 connections/org.eclipse.remote.serial.core.connectionType/Inference_Onboard/serial.parity=0
 connections/org.eclipse.remote.serial.core.connectionType/Inference_Onboard/serial.portName=COM6
 connections/org.eclipse.remote.serial.core.connectionType/Inference_Onboard/serial.stopBits=0
+connections/org.eclipse.remote.serial.core.connectionType/NanoEdgeAI/serial.baudRate=11
+connections/org.eclipse.remote.serial.core.connectionType/NanoEdgeAI/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/NanoEdgeAI/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/NanoEdgeAI/serial.portName=COM6
+connections/org.eclipse.remote.serial.core.connectionType/NanoEdgeAI/serial.stopBits=0
 connections/org.eclipse.remote.serial.core.connectionType/OnboardIMU/serial.baudRate=11
 connections/org.eclipse.remote.serial.core.connectionType/OnboardIMU/serial.byteSize=3
 connections/org.eclipse.remote.serial.core.connectionType/OnboardIMU/serial.parity=0
