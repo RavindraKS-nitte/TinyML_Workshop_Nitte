@@ -333,44 +333,44 @@
   ],
   "environment": {
     "generated_model": {
-      "generated_time": "2026-07-31T11:28:39+0530",
+      "generated_time": "2026-07-31T11:42:43+0530",
       "model_files": [
         {
           "name": "network_data_params.h",
-          "signature": "0xecef5d2e7fb7bf753e1e3f35b74e9090"
+          "signature": "0xc16a07c107bc4c10951570884c91580b"
         },
         {
           "name": "network_data_params.c",
-          "signature": "0xbb0dcac1a4e11249930aa43117a8e62c"
+          "signature": "0xa001755dcad099326452decf1b498a38"
         },
         {
           "name": "network_data.h",
-          "signature": "0x0f9e87e28b88b67af75675d18e53298a"
+          "signature": "0x2c4bb9d6cbbdb6f6cfc4d740efdf3f0a"
         },
         {
           "name": "network_data.c",
-          "signature": "0x2a814b0ab5ec9a4537bfc070ae940a60"
+          "signature": "0x4a3a0a292275e1f8131ea20e7d8cb502"
         },
         {
           "name": "network_config.h",
-          "signature": "0xcf6a731ac7ca8ee4deb2de3d84d146ab"
+          "signature": "0x216aff73f7f952a9f29cc8f25f4a7352"
         },
         {
           "name": "network.h",
-          "signature": "0x6f02ca247426538cc92b0e24c75baa56"
+          "signature": "0xe0863cddf8fe710d0ad0d80d0192f6ab"
         },
         {
           "name": "network.c",
-          "signature": "0x625efb2f028e81e338f9597410833126"
+          "signature": "0x9257f052387a388bcabb070af09072ab"
         }
       ],
       "name": "network"
     },
-    "network_signature": "0x718bae9e523c04b3",
+    "network_signature": "0x1aa8451edf50e6a6",
     "test_name": "",
     "tools": [
       {
-        "arguments": "generate --target stm32l4 --name network -m D:/RKS_TinyML_Workspace/TinyML_Workshop_Nitte/ONNX/mlp_model.onnx --compression none --verbosity 1 --workspace C:/Users/ADMIN/AppData/Local/Temp/mxAI_workspace1046302502339270014325351611052050122 --output C:/Users/ADMIN/.stm32cubemx/network_output",
+        "arguments": "generate --target stm32l4 --name network -m D:/RKS_TinyML_Workspace/TinyML_Workshop_Nitte/ONNX/mlp_model.onnx --compression none --verbosity 1 --workspace C:/Users/ADMIN/AppData/Local/Temp/mxAI_workspace1046386934600120012570638752885203922 --output C:/Users/ADMIN/.stm32cubemx/network_output",
         "environment": [
           "STATS_TYPE=X-CUBE-AI"
         ],
